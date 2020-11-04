@@ -2,6 +2,7 @@ body{
     background-color: #141336;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header{
@@ -14,10 +15,49 @@ header{
 
 header h2{
     margin-top: 2px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8fb2d1;
+}
+
+#form{
+    background-color: white;
+    color: #393685;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .burgerIcon, .burgerIcon img{
     margin: 20px auto;
     width: 200px;
+}
+
+.burgerDiv{
+    width: 70%;
+    margin: 0 auto;
+    background-color: orange;
+}
+
+#ordered{
+    float: left;
+    width: 48%;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+#eaten{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
