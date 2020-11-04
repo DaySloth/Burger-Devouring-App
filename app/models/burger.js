@@ -11,5 +11,14 @@ const burger = {
             cb(result);
         });
     },
-    
+    update: function(colVals, condition, cb) {
+        orm.update("burgers", colVals, condition, function(result){
+            cb(result);
+        });
+    },
+    delete: function(condition, cb){
+        orm.delete("burgers", condition, function(result){
+            cb(result);
+        });
+    }
 }
