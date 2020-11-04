@@ -18,6 +18,18 @@ header h2{
     color: #8fb2d1;
 }
 
+ul{
+    margin: 10px auto;
+    width: 50%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
 #form{
     background-color: white;
     color: #393685;
