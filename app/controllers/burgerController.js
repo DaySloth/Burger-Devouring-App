@@ -26,6 +26,9 @@ router.get('/', function(req, res){
 
 router.put('/api/burgers/orders/:id', function(req, res){
     console.log(req.body);
+    burger.update(JSON.stringify(req.body), "id = "+ req.params.id, function(result){
+        console.log(result);
+    })
 });
 
 router.post('/api/burgers/orders', function(req, res){
