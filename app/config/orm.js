@@ -18,6 +18,15 @@ const orm = {
             cb(result);
         });
     },
+    update: function(table, colVals, condition, cb){
+        let query = "UPDATE "+table+" SET "+colVals+" WHERE "+condition;
+
+        connection.query(query, function(err, result){
+            if(err) throw err;
+
+            cb(result);
+        });
+    },
     
 };
 
