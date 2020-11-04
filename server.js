@@ -1,11 +1,12 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+const path = require('path');
 
 const app = express();
 
 const PORT = process.env.PORT || 80;
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
