@@ -6,8 +6,21 @@ const burger = require('../models/burger');
 
 router.get('/', function(req, res){
     burger.selectAll(function(data){
-        console.log(data);
-        res.render("index", { burgers: data });
+        //console.log(data);
+        let orderedArr = [];
+        let eatenArr = [];
+        data.forEach(element => {
+            if(element.isEaten === 0){
+                element.isEaten = false;
+                orderedArr.push(element);
+            } else {
+                element.isEaten = true;
+                eatenArr.push(element);
+            }
+        });
+        console.log(orderedArr);
+        console.log(eatenArr);
+        res.render("index", { ordered: orderedArr, eaten: eatenArr });
     });
 });
 
