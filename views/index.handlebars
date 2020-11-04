@@ -4,11 +4,27 @@
 
 <div class="burgerDiv clearfix">
     <div id="ordered">
-        Ordered
+        <h2>Ordered</h2>
+        <hr>
+        {{#each ordered}}
+            <ul>
+                <li>Id: {{id}}</li>
+                <li>Burger: {{burger_name}}</li>
+                <li>Eaten: {{isEaten}}</li>
+            </ul>
+        {{/each}}
     </div>
 
     <div id="eaten">
-        Eaten
+        <h2>Eaten</h2>
+        <hr>
+        {{#each eaten}}
+            <ul>
+                <li>Id: {{id}}</li>
+                <li>Burger: {{burger_name}}</li>
+                <li>Eaten: {{isEaten}}</li>
+            </ul>
+        {{/each}}
     </div>
 </div>
 
