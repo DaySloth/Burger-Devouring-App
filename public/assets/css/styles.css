@@ -1,0 +1,23 @@
+body{
+    background-color: #141336;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #393685;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header h2{
+    margin-top: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.burgerIcon, .burgerIcon img{
+    margin: 20px auto;
+    width: 200px;
+}
