@@ -10,7 +10,7 @@ $(".eatBtn").on("click", function (event) {
     $.ajax({
         method: "PUT",
         url: "/api/burgers/orders/"+id,
-        data: "isEaten = true"
+        data: { isEaten: true }
     }).then(function(response){
         console.log(response);
         location.reload();
