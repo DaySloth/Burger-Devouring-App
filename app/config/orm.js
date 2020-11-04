@@ -9,6 +9,15 @@ const orm = {
             cb(result);
         });
     },
+    create: function(table, cols, vals, cb){
+        let query = "INSERT INTO "+ table +" ("+cols+")"+" VALUES ("+vals+")";
+        
+        connection.query(query, function(err, result){
+            if(err) throw err;
+
+            cb(result);
+        });
+    },
     
 };
 
