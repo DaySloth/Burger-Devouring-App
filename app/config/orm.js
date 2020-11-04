@@ -27,7 +27,15 @@ const orm = {
             cb(result);
         });
     },
-    
+    delete: function(table, condition, cb){
+        let query = "DELETE FROM "+table+" WHERE "+condition;
+
+        connection.query(query, function(err, result){
+            if(err) throw err;
+
+            cb(result);
+        });
+    }
 };
 
 module.exports = orm;
