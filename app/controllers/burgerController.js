@@ -18,26 +18,32 @@ router.get('/', function(req, res){
                 eatenArr.push(element);
             }
         });
-        console.log(orderedArr);
-        console.log(eatenArr);
+        //console.log(orderedArr);
+        //console.log(eatenArr);
         res.render("index", { ordered: orderedArr, eaten: eatenArr });
     });
 });
 
 router.put('/api/burgers/orders/:id', function(req, res){
-    console.log(req.body);
+    // console.log(req.body);
     burger.update(`isEaten = ${req.body.isEaten}`, 'id = '+req.params.id, function(result){
-        console.log(result);
+        //console.log(result);
+        res.render('index')
     })
 });
 
 router.post('/api/burgers/orders', function(req, res){
-    console.log(req.body);
+    // console.log(req.body.burger_name);
+    burger.create(req.body.burger_name, function(result){
+        //console.log(result);
+        res.status(200);
+    });
 });
 
 router.delete('/api/burgers/orders/:id', function(req, res){
-    burger.delete(req.params.id, function(data){
-        console.log(data);
+    burger.delete('id = '+req.params.id, function(data){
+        //console.log(data);
+        res.render('index');
     });
 });
 
