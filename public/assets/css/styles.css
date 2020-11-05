@@ -19,10 +19,12 @@ header h2{
 }
 
 ul{
-    margin: 10px auto;
-    width: 50%;
+    margin: 10px;
+    width: 40%;
     background-color: white;
     border-radius: 20px;
+    padding: 5px;
+    float: left;
 }
 
 ul li {
@@ -30,11 +32,15 @@ ul li {
     list-style: none;
 }
 
+span{
+    font-weight: bold;
+}
+
 #form{
     background-color: white;
     color: #393685;
-    width: 300px;
-    margin: 0 auto;
+    width: 400px;
+    margin: 20px auto;
     padding: 10px;
 }
 
@@ -50,9 +56,21 @@ form button {
 }
 
 .burgerDiv{
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     background-color: orange;
+}
+
+.ulBtn{
+    width: 100px;
+    background-color: #393685;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.ulBtn:hover{
+    background-color: #8fb2d1;
 }
 
 #ordered{
