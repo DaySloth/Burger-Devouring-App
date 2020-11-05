@@ -10,7 +10,7 @@ const orm = {
         });
     },
     create: function(table, cols, vals, cb){
-        let query = "INSERT INTO "+ table +" ("+cols+")"+" VALUES ("+vals+")";
+        let query = "INSERT INTO "+ table +" ("+cols+")"+" VALUES ('"+vals+"')";
         
         connection.query(query, function(err, result){
             if(err) throw err;
@@ -21,10 +21,10 @@ const orm = {
     update: function(table, colVals, condition, cb){
         let query = "UPDATE "+table+" SET "+colVals+" WHERE "+condition;
 
-        console.log(query);
+        //console.log(query);
         connection.query(query, function(err, result){
             if(err) throw err;
-
+            
             cb(result);
         });
     },
