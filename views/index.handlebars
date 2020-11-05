@@ -3,28 +3,28 @@
 </div>
 
 <div class="burgerDiv clearfix">
-    <div id="ordered">
+    <div id="ordered" class="clearfix">
         <h2>Ordered</h2>
         <hr>
         {{#each ordered}}
             <ul>
-                <li>Id: {{id}}</li>
-                <li>Burger: {{burger_name}}</li>
-                <li>Eaten: {{isEaten}}</li>
-                <button class="eatBtn" type="submit" data-id={{id}}>Eat me!</button>
+                <li><span>Id:</span> {{id}}</li>
+                <li><span>Burger:</span> {{burger_name}}</li>
+                <li><span>Eaten:</span> {{isEaten}}</li>
+                <button class="eatBtn ulBtn" type="submit" data-id={{id}}>Eat me!</button>
             </ul>
         {{/each}}
     </div>
 
-    <div id="eaten">
+    <div id="eaten" class="clearfix">
         <h2>Eaten</h2>
         <hr>
         {{#each eaten}}
             <ul>
-                <li>Id: {{id}}</li>
-                <li>Burger: {{burger_name}}</li>
-                <li>Eaten: {{isEaten}}</li>
-                <button class="throwAwayBtn" type="submit" data-id={{id}}>Throw away!</button>
+                <li><span>Id:</span> {{id}}</li>
+                <li><span>Burger:</span> {{burger_name}}</li>
+                <li><span>Eaten:</span> {{isEaten}}</li>
+                <button class="throwAwayBtn ulBtn" type="submit" data-id={{id}}>Throw away!</button>
             </ul>
         {{/each}}
     </div>
