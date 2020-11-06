@@ -1,6 +1,6 @@
 # Burger Ordering and Eating App
 
-![Link to website](https://damp-beyond-81928.herokuapp.com/)
+[Link to website](https://damp-beyond-81928.herokuapp.com/)
 
 ![MIT License](https://img.shields.io/badge/License-MIT-green)
 
@@ -12,7 +12,7 @@ This application is a very simple application that will let you input a burger y
 
 ## Usage
 
-You can visit the link provided and this will take you to the Heroku deployed application. Since this is deployed on Heroku it utilizes JawsDB through Heroku to store the data. You will simpily put in the burger you would like to order and submit it. Afterwards it will display in the ordered category with the option for you eat the order. If you eat the order it will update the SQL database and move the order to the eaten category. Once it does this it will give the option to throw the trash away. If you choose this it will delete the burger from the SQL database.
+You can visit the [Link](https://damp-beyond-81928.herokuapp.com/) provided and this will take you to the Heroku deployed application. Since this is deployed on Heroku it utilizes JawsDB through Heroku to store the data. You will simpily put in the burger you would like to order and submit it. Afterwards it will display in the ordered category with the option for you eat the order. If you eat the order it will update the SQL database and move the order to the eaten category. Once it does this it will give the option to throw the trash away. If you choose this it will delete the burger from the SQL database.
 
 ## Credits
 
